@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-University Collaboration Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Cross-University Collaboration Platform</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Join a Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Collaborate Globally, Innovate Together</h2>
+        <p>Connect with students from different universities and countries to work on research, innovation, and entrepreneurial projects.</p>
+        <button onclick="scrollToSection('projects')">Browse Projects</button>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Current Projects</h2>
+        <div class="project-card">
+            <h3>AI-Powered Research Tool</h3>
+            <p>Collaborate with students from MIT and Stanford on an AI tool for automating research analysis.</p>
+            <button onclick="joinProject()">Join Project</button>
+        </div>
+        <div class="project-card">
+            <h3>Climate Change Data Visualization</h3>
+            <p>Work with global students to create interactive data visualizations for climate change impact.</p>
+            <button onclick="joinProject()">Join Project</button>
+        </div>
+    </section>
+
+    <section id="collaboration-tools" class="collab-section">
+        <h2>Collaboration Tools</h2>
+        <div id="chat-box">
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="sendMessage(event)">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cross-University Collaboration Platform | All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
